@@ -5,13 +5,18 @@ import { initMercadoPago, CardPayment } from '@mercadopago/sdk-react';
 const Suscripcion = () => {
 
 
-    initMercadoPago('APP_USR-90fbc189-ca9c-440e-9e14-0e92a2938491');
-const AMOUNT = 2000
-
+    initMercadoPago('TEST-59c57e3c-38f9-4413-93c9-8fa076d6ab31');
+    //TEST-59c57e3c-38f9-4413-93c9-8fa076d6ab31
 
 const initialization = {
     amount: 100,
    };
+   const customization ={paymentMethods:{
+    minInstallments: 1 , 
+    maxInstallments: 1
+   
+  }
+   }
 
    const onSubmit = async (formData) => {
     // callback llamado al hacer clic en el botón enviar datos
@@ -66,6 +71,7 @@ const initialization = {
          onReady={onReady}
          onError={onError}
          onSubmit={onSubmit}
+         customization={customization}
 
     />
         
