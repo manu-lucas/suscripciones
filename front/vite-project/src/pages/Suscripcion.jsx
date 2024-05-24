@@ -1,30 +1,39 @@
-import React from 'react'
-import { initMercadoPago, CardPayment } from '@mercadopago/sdk-react';
-
+import React, { useState } from "react";
+import { initMercadoPago } from "@mercadopago/sdk-react";
+import { Payment } from "@mercadopago/sdk-react";
 
 const Suscripcion = () => {
+  initMercadoPago("APP_USR-ef6e1f0e-def8-42fa-bca2-f94e400edd8c", {
+    locale: "es-AR",
+  });
 
+  const initialization = {
+    amount: 20,
+    preferenceId: "388541957-cfc75906-326c-457b-8823-cc85ef5a368e",
 
-    initMercadoPago('TEST-59c57e3c-38f9-4413-93c9-8fa076d6ab31');
-    //TEST-59c57e3c-38f9-4413-93c9-8fa076d6ab31
+    payer: {
+      email: "lucasechegaray2011@gmail.com",
+    },
+  };
 
-const initialization = {
-    amount: 100,
-   };
-   const customization ={paymentMethods:{
-    minInstallments: 1 , 
-    maxInstallments: 1
-   
-  }
-   }
+  const customization = {
+    paymentMethods: {
+      atm: "all",
+      mercadoPago: ["wallet_purchase"],
 
-   const onSubmit = async (formData) => {
+      creditCard: "all",
+      debitCard: "all",
+      maxInstallments: 1,
+    },
+  };
+
+  const onSubmit = async (formData) => {
     // callback llamado al hacer clic en el botón enviar datos
     return new Promise((resolve, reject) => {
-      fetch('http://localhost:3000/process_payment', {
-        method: 'POST',
+      fetch("http://localhost:3000/process_payment", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       })
@@ -38,45 +47,38 @@ const initialization = {
           reject();
         });
     });
-   };
-   
-   
-   const onError = async (error) => {
+  };
+
+  const onError = async (error) => {
     // callback llamado para todos los casos de error de Brick
     console.log(error);
-   };
-   
-   
-   const onReady = async () => {
+  };
+
+  const onReady = async () => {
     /*
-      Callback llamado cuando Brick está listo.
-      Aquí puedes ocultar cargamentos de su sitio, por ejemplo.
-    */
-   };
-   
-
-
-
-
-
-
-
+        Callback llamado cuando Brick está listo.
+        Aquí puedes ocultar cargamentos de su sitio, por ejemplo.
+      */
+  };
 
   return (
     <div>
-        <h2>Suscripciones</h2>
-        
-        <CardPayment
-         initialization={initialization}
-         onReady={onReady}
-         onError={onError}
-         onSubmit={onSubmit}
-         customization={customization}
+      <h2>Suscripciones</h2>
 
-    />
-        
-        </div>
-  )
-}
+      {/* <CardPayment
+           initialization={initialization}
+           onReady={onReady}
+           onError={onError}
+           onSubmit={onSubmit}
+           customization={customization} /> */}
 
-export default Suscripcion
+      <Payment
+        initialization={initialization}
+        customization={customization}
+        onSubmit={onSubmit}
+      />
+    </div>
+  );
+};
+
+export default Suscripcion;

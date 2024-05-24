@@ -1,0 +1,597 @@
+{
+    "results": [
+       
+        {
+            "metadata": {
+                "preapproval_id": "1364d4abef124b32a591e418f4a3a6bf"
+            },
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "branch": "Merchant Services",
+                    "sub_unit": "recurring"
+                },
+                "transaction_data": {
+                    "subscription_id": "1364d4abef124b32a591e418f4a3a6bf",
+                    "user_present": null,
+                    "invoice_period": {
+                        "period": 1,
+                        "type": "monthly"
+                    },
+                    "subscription_sequence": {
+                        "number": 1,
+                        "total": null
+                    },
+                    "first_time_use": true,
+                    "invoice_id": "b17272bc65d54ff98a2636dba53e7f5c",
+                    "billing_date": "2024-05-24",
+                    "payment_reference": null,
+                    "processor": null,
+                    "plan_id": "92a44848e38148a9bd12341479e58d5a"
+                },
+                "type": "SUBSCRIPTIONS",
+                "application_data": {
+                    "name": "recurring",
+                    "version": "3.20.1-rc-1"
+                }
+            },
+            "fee_details": [
+                {
+                    "amount": 0.82,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": null,
+            "date_approved": "2024-05-24T10:27:14.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "1111111",
+                    "type": "DNI"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "1796793646",
+                "type": null,
+                "first_name": null,
+                "email": "test_user_108971236@testuser.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 20,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 19.18,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2024-05-24T10:27:14.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.82,
+                        "refunded": 0
+                    },
+                    "date_created": "2024-05-24T10:27:14.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "79032849196-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 79032849196,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {},
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "ip_address": "190.15.204.189",
+                "nsu_processadora": null,
+                "available_balance": null,
+                "items": [
+                    {
+                        "quantity": "1",
+                        "category_id": null,
+                        "picture_url": null,
+                        "description": null,
+                        "id": null,
+                        "title": "Plan Contabilidad",
+                        "unit_price": "20"
+                    }
+                ]
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 20,
+            "description": "Plan Contabilidad",
+            "financing_group": null,
+            "money_release_date": "2024-06-11T10:27:14.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "present_meta_data": "",
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1796796862,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2024-05-24T10:27:17.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "3.52.2",
+            "date_created": "2024-05-24T10:27:14.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {
+                "preapproval_id": "89ccc9abd50d4ccdba4b00ba178a9126"
+            },
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "branch": "Merchant Services",
+                    "sub_unit": "recurring"
+                },
+                "transaction_data": {
+                    "subscription_id": "89ccc9abd50d4ccdba4b00ba178a9126",
+                    "user_present": null,
+                    "invoice_period": {
+                        "period": 1,
+                        "type": "monthly"
+                    },
+                    "subscription_sequence": {
+                        "number": 1,
+                        "total": null
+                    },
+                    "first_time_use": true,
+                    "invoice_id": "2bb7f561eff44ff4b526411d8ea28d2b",
+                    "billing_date": "2024-05-24",
+                    "payment_reference": null,
+                    "processor": null,
+                    "plan_id": "3c51f5d67e61435eb13a5ea965123880"
+                },
+                "type": "SUBSCRIPTIONS",
+                "application_data": {
+                    "name": "recurring",
+                    "version": "3.20.1-rc-1"
+                }
+            },
+            "fee_details": [
+                {
+                    "amount": 1.23,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": null,
+            "date_approved": "2024-05-24T10:33:03.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "1111111",
+                    "type": "DNI"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "1796793646",
+                "type": null,
+                "first_name": null,
+                "email": "test_user_108971236@testuser.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 30,
+                "acquirer_reference": null,
+                "installment_amount": 30,
+                "financial_institution": null,
+                "net_received_amount": 28.77,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": "Mercadopago*fake",
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2024-05-24T10:33:02.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 1.23,
+                        "refunded": 0
+                    },
+                    "date_created": "2024-05-24T10:33:02.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "79033268080-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 79033268080,
+            "payment_type_id": "credit_card",
+            "payment_method": {
+                "issuer_id": "3",
+                "data": {
+                    "routing_data": {
+                        "merchant_account_id": "5924780738444"
+                    }
+                },
+                "id": "master",
+                "type": "credit_card"
+            },
+            "order": {},
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "ip_address": "190.15.204.189",
+                "nsu_processadora": null,
+                "available_balance": null,
+                "items": [
+                    {
+                        "quantity": "1",
+                        "category_id": null,
+                        "picture_url": null,
+                        "description": null,
+                        "id": null,
+                        "title": "Plan Pro Emprendedor",
+                        "unit_price": "30"
+                    }
+                ]
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {
+                "first_six_digits": "503175",
+                "country": "USA",
+                "expiration_year": 2025,
+                "bin": "50317557",
+                "date_created": "2024-05-24T10:33:02.000-04:00",
+                "expiration_month": 11,
+                "id": null,
+                "cardholder": {
+                    "identification": {
+                        "number": "13245678",
+                        "type": "DNI"
+                    },
+                    "name": "APRO"
+                },
+                "last_four_digits": "0604",
+                "date_last_updated": "2024-05-24T10:33:02.000-04:00",
+                "tags": null
+            },
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 30,
+            "description": "Plan Pro Emprendedor",
+            "financing_group": null,
+            "money_release_date": "2024-06-11T10:33:03.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "present_meta_data": "",
+                "gateway": {
+                    "buyer_fee": 0,
+                    "finance_charge": 0,
+                    "date_created": "2024-05-24T10:33:03.000-04:00",
+                    "merchant": null,
+                    "reference": "{\"merchant_number\":\"30121999\",\"merchant_transaction_reference\":\"30121999\",\"processed_at\":\"2024-05-24T10:33:03-04:00\",\"processed_at_source\":\"integration\",\"payment_id\":\"79033268080\",\"site_id\":\"MLA\"}",
+                    "statement_descriptor": "Mercadopago*fake",
+                    "issuer_id": "3",
+                    "usn": null,
+                    "installments": 1,
+                    "soft_descriptor": "TESTUSER42357",
+                    "authorization_code": "301299",
+                    "payment_id": 79033268080,
+                    "profile_id": "g2_firstdata-ipg_firstdata_24780738",
+                    "options": "[{\"collector_id\":1796796862},{\"subscription\":{\"first_time_use\":true,\"subscription_sequence\":{\"number\":1,\"total\":null},\"subscription_id\":\"89ccc9abd50d4ccdba4b00ba178a9126\",\"invoice_period\":{\"period\":1,\"type\":\"monthly\"},\"billing_date\":\"2024-05-24\"}},{\"payment_operation_type\":\"regular_payment\"},{\"plan\":{}},{\"has_wallet_id\":false},{\"user_present\":true},{\"regulation\":{\"legal_name\":\"Test Test\",\"address_street\":\"Test Address\",\"address_door_number\":123,\"zip\":\"1414\",\"city\":\"Palermo\",\"country\":\"ARG\",\"document_number\":\"1111111\",\"document_type\":\"DNI\",\"region_code\":\"AR\",\"region_code_iso\":\"AR-C\",\"fiscal_condition\":null,\"email\":\"test_user_423579258@testuser.com\",\"phone\":\"1111-1111\",\"mcc\":\"8999\"}},{\"security_code_data\":{\"ads_remove_cvv\":false}}]",
+                    "connection": "firstdata-ipg",
+                    "id": "45408878088_7b7f76767f7f737c3778",
+                    "operation": "purchase"
+                }
+            },
+            "authorization_code": "301299",
+            "captured": true,
+            "collector_id": 1796796862,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2024-05-24T10:33:05.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "3.52.2",
+            "date_created": "2024-05-24T10:33:02.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "3",
+            "payment_method_id": "master",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        }
+    ],
+    "paging": {
+        "total": 8,
+        "limit": 10,
+        "offset": 0
+    }
+}
+
+
+
+{
+    "accounts_info": null,
+    "acquirer_reconciliation": [],
+    "additional_info": {
+        "authentication_code": null,
+        "available_balance": null,
+        "ip_address": "190.15.204.189",
+        "items": [
+            {
+                "category_id": null,
+                "description": null,
+                "id": null,
+                "picture_url": null,
+                "quantity": "1",
+                "title": "Plan Contabilidad",
+                "unit_price": "20"
+            }
+        ],
+    },
+    "captured": true,
+    "card": {},
+    "charges_details": [
+        {
+            "accounts": {
+                "from": "collector",
+                "to": "mp"
+            },
+            "amounts": {
+                "original": 0.82,
+                "refunded": 0
+            },
+            "client_id": 0,
+            "date_created": "2024-05-24T10:27:14.000-04:00",
+            "id": "79032849196-001",
+            "last_updated": "2024-05-24T10:27:14.000-04:00",
+            "metadata": {},
+            "name": "mercadopago_fee",
+            "refund_charges": [],
+            "reserve_id": null,
+            "type": "fee"
+        }
+    ],
+    "collector_id": 1796796862,
+    "coupon_amount": 0,
+    "currency_id": "ARS",
+    "date_approved": "2024-05-24T10:27:14.000-04:00",
+    "date_created": "2024-05-24T10:27:14.000-04:00",
+    "description": "Plan Contabilidad",
+    "external_reference": null,
+    "fee_details": [
+        {
+            "amount": 0.82,
+            "fee_payer": "collector",
+            "type": "mercadopago_fee"
+        }
+    ],
+    "financing_group": null,
+    "id": 79032849196,
+    "installments": 1,
+    "issuer_id": "2005",
+    "live_mode": true,
+    "metadata": {
+        "preapproval_id": "1364d4abef124b32a591e418f4a3a6bf"
+    },
+    "money_release_date": "2024-06-11T10:27:14.000-04:00",
+    "money_release_schema": null,
+    "money_release_status": "pending",
+    "notification_url": null,
+    "operation_type": "regular_payment",
+    "order": {},
+    "payer": {{}
+        "email": "test_user_108971236@testuser.com",
+        "entity_type": null,
+        "first_name": null,
+        "id": "1796793646",
+        "identification": {
+            "number": "1111111",
+            "type": "DNI"
+        },
+        "last_name": null,
+        "operator_id": null,
+        "phone": {
+            "number": null,
+            "extension": null,
+            "area_code": null
+        },
+        "type": null
+    },
+    "payment_method": {
+        "id": "account_money",
+        "issuer_id": "2005",
+        "type": "account_money"
+    },
+    "payment_method_id": "account_money",
+    "payment_type_id": "account_money",
+    "platform_id": null,
+    "point_of_interaction": {
+        "application_data": {
+            "name": "recurring",
+            "version": "3.20.1-rc-1"
+        },
+        "business_info": {
+            "branch": "Merchant Services",
+            "sub_unit": "recurring",
+            "unit": "online_payments"
+        },
+        "transaction_data": {
+            "billing_date": "2024-05-24",
+            "first_time_use": true,
+            "invoice_id": "b17272bc65d54ff98a2636dba53e7f5c",
+            "invoice_period": {
+                "period": 1,
+                "type": "monthly"
+            },
+            "payment_reference": null,
+            "plan_id": "92a44848e38148a9bd12341479e58d5a",
+            "processor": null,
+            "subscription_id": "1364d4abef124b32a591e418f4a3a6bf",
+            "subscription_sequence": {
+                "number": 1,
+                "total": null
+            },
+            "user_present": null
+        },
+        "type": "SUBSCRIPTIONS"
+    },
+    "pos_id": null,
+    "processing_mode": "aggregator",
+    "refunds": [],
+    "shipping_amount": 0,
+    "sponsor_id": null,
+    "statement_descriptor": null,
+    "status": "approved",
+    "status_detail": "accredited",
+    "store_id": null,
+    "tags": null,
+    "taxes_amount": 0,
+    "transaction_amount": 20,
+    "transaction_amount_refunded": 0,
+    "transaction_details": {
+        "acquirer_reference": null,
+        "external_resource_url": null,
+        "financial_institution": null,
+        "installment_amount": 0,
+        "net_received_amount": 19.18,
+        "overpaid_amount": 0,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null,
+        "total_paid_amount": 20
+    }
+}
+
+
+
+
+/---------------------------------------------------------------------------/
+// creo la suscripcion, paso el card token de la tarjeta, y el id del plan . con el Acces token de la integracion . 
+
+{
+    "id": "9ebb89042aac4a198192ddce9de8673a",
+    "payer_id": 1623355062,
+    "payer_email": "",
+    "back_url": "https://www.yoursite.com",
+    "collector_id": 1796796862,
+    "application_id": 3926537940861188,
+    "status": "authorized",
+    "reason": "Yoga classes",
+    "external_reference": "YG-12345",
+    "date_created": "2024-05-24T15:17:23.894-04:00",
+    "last_modified": "2024-05-24T15:17:24.196-04:00",
+    "init_point": "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_id=9ebb89042aac4a198192ddce9de8673a",
+    "preapproval_plan_id": "2c9380848fa6c8f6018fabfada530128",
+    "auto_recurring": {
+        "frequency": 1,
+        "frequency_type": "months",
+        "transaction_amount": 35.00,
+        "currency_id": "ARS",
+        "start_date": "2024-06-24T15:17:23.895-04:00",
+        "end_date": "2025-05-24T15:17:23.895-04:00",
+        "billing_day": 10,
+        "billing_day_proportional": true,
+        "has_billing_day": true,
+        "free_trial": null
+    },
+    "summarized": {
+        "quotas": 11,
+        "charged_quantity": null,
+        "pending_charge_quantity": 11,
+        "charged_amount": null,
+        "pending_charge_amount": 385.00,
+        "semaphore": null,
+        "last_charged_date": null,
+        "last_charged_amount": null
+    },
+    "next_payment_date": "2024-06-23T15:17:24.000-04:00",
+    "payment_method_id": "master",
+    "card_id": "9380269842",
+    "first_invoice_offset": null
+}
