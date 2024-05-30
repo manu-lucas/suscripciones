@@ -5,19 +5,32 @@ import './App.css'
 import Suscripcion from './pages/Suscripcion'
 import FormularioPreferenc from './pages/FormularioPreferenc'
 import LinkPagos from './pages/LinkPagos'
+import Planes from './pages/Planes'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+
+
+let router = createBrowserRouter([
+  {
+    path: "/",
+    element: < Planes/>,
+  },
+  {
+    path: "/suscripcion/:id",
+    element: <Suscripcion />,
+  },
+
+ 
+]);
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-    {/* <FormularioPreferenc/> */}
 
-    <Suscripcion/>
+    return <RouterProvider router={router} />;
 
-    {/* <LinkPagos/> */}
-    </>
-  )
+  
 }
 
 export default App

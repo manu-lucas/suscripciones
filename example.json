@@ -595,3 +595,39 @@
     "card_id": "9380269842",
     "first_invoice_offset": null
 }
+
+
+
+// web hook . 
+{
+    action: 'payment.created',
+    api_version: 'v1',
+    data: { id: '78800007945' },
+    date_created: '2024-05-24T19:17:23Z',
+    id: 113521746229,
+    live_mode: true,
+    type: 'payment',
+    user_id: '1796796862'
+  }
+  {
+    action: 'created',
+    application_id: 3926537940861188,
+    data: { id: '9ebb89042aac4a198192ddce9de8673a' },
+    date: '2024-05-24T19:17:24Z',
+    entity: 'preapproval',
+    id: 113521745559,
+    type: 'subscription_preapproval',
+    version: 0
+  }
+  {
+    action: 'updated',
+    application_id: 3926537940861188,
+    data: { id: '9ebb89042aac4a198192ddce9de8673a' },
+    date: '2024-05-24T19:17:24Z',
+    entity: 'preapproval',
+    id: 113557351166,
+    type: 'subscription_preapproval',
+    version: 1
+  }
+  
+  
