@@ -6,6 +6,7 @@ import Suscripcion from './pages/Suscripcion'
 import FormularioPreferenc from './pages/FormularioPreferenc'
 import LinkPagos from './pages/LinkPagos'
 import Planes from './pages/Planes'
+import PagoExitoso from "./pages/PagoExitoso"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 
@@ -19,6 +20,10 @@ let router = createBrowserRouter([
     path: "/suscripcion/:id",
     element: <Suscripcion />,
   },
+  {
+    path:"/pagoexitoso",
+    element:<PagoExitoso/>
+  }
 
  
 ]);

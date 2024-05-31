@@ -7,7 +7,7 @@ import { useLocation,useParams  } from 'react-router-dom';
 
 
 const Suscripcion = () => {
-  initMercadoPago("TEST-babe7d7a-eba2-43d0-a75a-125a95c2512f", {
+  initMercadoPago("APP_USR-42aa12cc-55f8-4497-bf69-e325a6d88ff2", {
     locale: "es-AR",
   });
   const  idRoute  = useParams();
@@ -61,11 +61,11 @@ const Suscripcion = () => {
   };
 
   
-
+  // http://localhost:3000/process_payment?idClient=${clientNombre}&planId=${id}
   const onSubmit = async (formData) => {
     // callback llamado al hacer clic en el botón enviar datos
     return new Promise((resolve, reject) => {
-      fetch(`http://localhost:3000/process_payment?idClient=${clientNombre}&planId=${id}`, {
+      fetch(`http://localhost:3000/process_payment`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
