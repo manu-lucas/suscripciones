@@ -3,10 +3,12 @@ import { MercadoPagoConfig, Payment, Preference } from "mercadopago";
 import cors from "cors";
 import axios from "axios";
 
+
 const client = new MercadoPagoConfig({
   accessToken:
-    "TEST-3926537940861188-052208-5ca7262b6d68d1b35b9a052615a0b8f2-1796796862",
+    "APP_USR-3500918439586043-053114-18920bd0f62fd7dc58fb9805f3cfbb0b-1796796862",
 });
+
 const app = express();
 const port = 3000;
 app.use(express.json());
@@ -62,53 +64,54 @@ const planId = req.query.planId;
 const {payer,token,transaction_amount} = req.body
   console.log(planId, idClient)
   console.log(req.body)
-console.log(payer,token,transaction_amount)
 
 
-  // const data = {
-  //   "preapproval_plan_id": planId,
-  //   "reason": "Programacion Basica",
-  //   "external_reference": "YG-001",
-  //   "payer_email": payer.email,
-  //   "card_token_id": token,
-  //   "auto_recurring": {
-  //     "frequency": 1,
-  //     "frequency_type": "months",
-  //     "start_date": "2024-06-01T13:07:14.260Z",
-  //     "end_date": "2025-12-01T15:59:52.581Z",
-  //     "transaction_amount": transaction_amount,
-  //     "currency_id": "ARS"
-  //   },
-  //   "back_url": "https://chronic-compiler-systematic-consequence.trycloudflare.com/pagoexitoso",
-  //   "status": "authorized"
-  // };
+  const data = {
+    "preapproval_plan_id": planId,
+    "external_reference": "YG-001",
+    "payer_email": payer.email,
+    "card_token_id": token,
+    "auto_recurring": {
+      "frequency": 1,
+      "frequency_type": "months",
+      "start_date": "2024-06-01T13:07:14.260Z",
+      "end_date": "2025-06-06T15:59:52.581Z",
+      "transaction_amount": transaction_amount,
+      "currency_id": "ARS"
+    },
+    "back_url": `https://ignored-gorgeous-offset-ups.trycloudflare.com/escucha?id=${planId}&email=${payer.email}`,
+    "status": "authorized"
+  };
 
 
-  //   const generarSuscripcion = ()=>{
-  //     axios.post('https://api.mercadopago.com/preapproval', data, {
-  //       headers: {
-  //         'Authorization': 'Bearer TEST-3926537940861188-052208-5ca7262b6d68d1b35b9a052615a0b8f2-1796796862',
-  //         'Content-Type': 'application/json'
-  //       }
-  //     })
-  //     .then((response) => {
-  //       console.log('Respuesta:', response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.error('Error:', error.response.data);
-  //     });
+    const generarSuscripcion = ()=>{
+      axios.post('https://api.mercadopago.com/preapproval', data, {
+        headers: {
+          'Authorization': 'Bearer TEST-3500918439586043-053114-24168b90fbd52b566005a4058c63a9f9-1796796862',
+          'Content-Type': 'application/json'
+        }
+      })
+      .then((response) => {
+        console.log('Respuesta:', response.data);
+      })
+      .catch((error) => {
+        console.error('Error:', error.response.data);
+      });
     
-  //   }
-  //   if(token){
-  //     generarSuscripcion()
+    }
+    // if(token){
+    //   generarSuscripcion()
 
-  //   }
+    // }
     
   res.status(200).send({success:true})
 
 });
 
 app.post("/escucha", (req, res) => {
+  const idClient = req.query.id;
+const email = req.query.email;
+console.log(email, idClient)
   try {
     console.log(req.body);
     res.status(200).json({ success: true });
@@ -119,12 +122,9 @@ app.post("/escucha", (req, res) => {
 
 app.get("/ver", async (req, res) => {
   try {
-    const client = new MercadoPagoConfig({
-      accessToken:
-        "APP_USR-3926537940861188-052208-8a194b9a2103a72b815bcd5190941223-1796796862",
-    });
+   
 
-    const payment = await new Payment(client).get({ id: 78800007945 });
+    const payment = await new Payment(client).get({ id: 1623355062 });
     console.log("soy un pago ", payment);
     console.log(req.body);
 
